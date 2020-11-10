@@ -14,10 +14,12 @@ class ReviewsController < ApplicationController
     else
       render :new
       # render "new"
+      # render "restaurants/show"
     end
   end
 
   private
+
   def review_params
     params.require(:review).permit(:content, :rating)
   end

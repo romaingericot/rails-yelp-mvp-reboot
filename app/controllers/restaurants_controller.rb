@@ -5,6 +5,8 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    # To add a simple form for to she show of a restaurant :
+    @review = Review.new
   end
 
   def new
